@@ -1,0 +1,633 @@
+/* Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*Navbar*/
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 30px;
+}
+.nav-links li a{
+    color: ivory;
+    font-size: 3vmin;
+    font-weight: bold;
+}
+.navbar .nav-links li a:hover{
+    color: rgb(31, 10, 10);
+    transition: 0.6s ease;
+    background-color: rgba(253, 248, 237, 0.795);
+    box-shadow: 0 0 5px rgb(245, 100, 75),
+                0 0 20px rgba(250, 57, 57, 0.623),
+                0 0 60px rgba(196, 59, 59, 0.705),
+                0 0 150px rgba(136, 37, 37, 0.829);
+}
+.logo img{
+    height: 90px;
+    padding-left: 18px;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(50, 50, 50, 0.75),rgba(50, 50, 50, 0.75)), url('/webfinals/images/RedJewel.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-content {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 5vmin;
+    color:ivory;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: red;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size: 14vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color:red;
+
+}
+.ctn{
+    padding: 8px 15px;
+    background: maroon;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+/*Venue*/
+.venue {
+    width: 50%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    text-decoration: center;
+    font-size: 4vmin;
+    color: rgb(31, 10, 10);
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.venue .row {
+    margin-top: 50px;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 50px auto;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    align-items: center;
+}
+.card1{
+    background-image: url('/webfinals/images/E1.jpg')
+}
+
+.card2{
+    background-image: url('/webfinals/images/E2.jpg');
+}
+
+.card3{
+    background-image: url('/webfinals/images/E3.jpg');
+}
+
+.card4{
+    background-image: url('/webfinals/images/E4.jpg');
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.venue h4 {
+    font-size: 4vmin;
+    color: rgb(31, 10, 10);
+    margin: 20px auto;
+}
+.venue p {
+    color: rgb(31, 10, 10);
+    padding: 0px 40px;
+    font-size: 3vmin;
+}
+.ctn {
+    margin-top: 40px;
+}
+
+/*Gallery*/
+.gallery {
+    width: 50%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    text-decoration: center;
+    font-size: 4vmin;
+    color: rgb(31, 10, 10);
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery .row {
+    margin-top: 50px;
+}
+.gallery .card{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-bottom: 50px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    align-items: center;
+}
+.cards5{
+    background-image: url('/webfinals/images/olympic.jpg')
+}
+
+.cards6{
+    background-image: url('/webfinals/images/kiddie.jpg');
+}
+
+.cards7{
+    background-image: url('/webfinals/images/pic1.jpg');
+}
+
+.cards8{
+    background-image: url('/webfinals/images/pic2.jpg');
+}
+.cards9{
+    background-image: url('/webfinals/images/pic3.jpg');
+}
+
+.cards10{
+    background-image: url('/webfinals/images/pic4.jpg');
+}
+
+.card:hover{
+    transition: transform .3 ease;
+}
+.gallery h4 {
+    font-size: 4vmin;
+    color: rgb(31, 10, 10);
+    margin: 50px auto;
+    display: flex;
+}
+.gallery h4:hover {
+    color: ivory;
+    background-color: rgb(139, 6, 6);
+    box-shadow: 0 0 5px rgb(245, 100, 75),
+                0 0 20px rgba(250, 57, 57, 0.623),
+                0 0 60px rgba(196, 59, 59, 0.705),
+                0 0 150px rgba(136, 37, 37, 0.829);
+}
+.gallery p {
+    color: rgb(31, 10, 10);
+    padding: 0px 40px;
+    font-size: 3vmin;
+    margin: 20px auto;
+}
+.gallery p:hover {
+    color: ivory;
+    background-color: rgb(139, 6, 6);
+    box-shadow: 0 0 5px rgb(245, 100, 75),
+                0 0 20px rgba(250, 57, 57, 0.623),
+                0 0 60px rgba(196, 59, 59, 0.705),
+                0 0 150px rgba(136, 37, 37, 0.829);
+}
+
+
+/*Garden*/
+.garden .title{
+    flex-basis: 50%;
+}
+.col-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+.garden h1{
+    text-align: center;
+    text-decoration: center;
+    font-size: 4vmin;
+    color: rgb(31, 10, 10);
+}
+.garden .title p{
+    justify-content: center;
+    align-items: center;
+    color: rgb(31, 10, 10);
+    font-size: 20px;
+    line-height: 15px;
+    margin: 50px auto;
+}
+.container{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 250px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.card11{
+    background-image: url('/webfinals/garden.jpg');
+}
+
+.card12{
+    background-image: url('/webfinals/images/plant1.jpg');
+}
+
+.card13{
+    background-image: url('/webfinals/images/plant2.jpg');
+}
+
+.card14{
+    background-image: url('/webfinals/images/plant3.jpg');
+}
+
+.card:hover{
+    transition: transform .3 ease;
+}
+h5{
+    color: #DDD;
+}
+
+
+
+/*About*/
+.about {
+    width: 100%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    text-decoration: center;
+    font-size: 4vmin;
+    color: rgb(31, 10, 10);
+}
+.about .about-content {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(50, 50, 50, 0.75),rgba(50, 50, 50, 0.75)), url('/webfinals/images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+}
+.about-content {
+    width: 60%;
+    padding: 50px;
+    color: red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about-content h2{
+    font-size: 7vmin;
+    margin: 20px auto;
+}
+.about-content .line {
+    margin-bottom: 80px;
+}
+.about-content p{
+    color: ivory;
+    font-size: 3vmin;
+}
+.about-content .ctn {
+    margin-top: 30px;
+}
+
+
+.about .cottages {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(112, 111, 111, 0.267),rgba(50, 50, 50, 0.75)), url('/webfinals/images/cottage.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+}
+.cottages {
+    width: 60%;
+    padding: 50px;
+    color: red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cottages h2 {
+    font-size: 7vmin;
+    margin: 10px auto;
+}
+.cottages .line {
+    margin-bottom: 40px;
+}
+.cottages h3 {
+    margin-top: 40px;
+    font-size: 5vmin;
+    color: ivory;
+}
+.cottages p{
+    color: ivory;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+/*Contact*/
+.contact{
+    text-align: center;
+    width: 80%;
+    margin: 90px auto;
+}
+
+.form-area form{
+    width: 100%;
+    height: auto;
+}
+.contact form{
+    flex: 1 1 20rem;
+    border: 0.1rem solid rgba(128, 0, 0, 0.37);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center; 
+}
+form input,
+form textarea{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    outline: none;
+    background: #DDD;
+    padding: 15px;
+    margin: 15px 0;
+    color: maroon;
+    font-size: 18px;
+    border-radius: 8px;
+}
+form .btn2{
+    padding: 10px 15px;
+    background: maroon;
+    border-radius: 30px;
+    color: whitesmoke;
+    font-size: 2vmin;
+}
+.details{
+    background: #DDD;
+    text-align: center;
+    width: 80%;
+    margin: 80px auto;
+}
+
+.details .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 5rem;
+    margin-top: 40px;
+}
+
+ img{
+    height: 3rem;
+    
+}
+.details .box-container .box h3{
+    font-size: 2rem;
+    color: rgb(31, 10, 10);
+    padding: 1rem 0;
+}
+
+.details .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: maroon;
+    padding: 1rem 0;
+}
+
+.details .box-container .box .link{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: maroon;
+    padding: .5rem 0;
+    display: block;
+}
+
+.details .box-container .box .link:hover{
+    color: rgb(37, 1, 1);
+    text-decoration: underline;
+}
+
+
+
+/*Footer*/
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #DDD;
+    text-align: center;
+}
+.footer p {
+    color: rgb(31, 10, 10);
+    margin: 20px auto;
+    padding: 20px auto;
+    font-size: 3vmin;
+}
+
+
+
+/*Responsive*/
+@media only screen and (min-width:600px) and (max-width:768px){
+    body{
+        width: 100%;
+        height: 100%;
+        background-attachment: fixed;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #A72F1D;
+        color: whitesmoke;
+        margin-top: -900px;
+        transition: all 0.8s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+    /*Venue*/
+    .row {
+        flex-direction: column;
+    }
+    .row .col {
+        margin: 20px auto;
+    }
+    .card img {
+        min-width: 100%;
+    }
+
+    /*Garden*/
+    .garden .col {
+        width: 100%;
+    }
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery img {
+        width: 90%;
+    }
+
+
+
+    /*About*/
+    .about-content {
+        width: 100%;
+    }
+    .about-content h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .cottages {
+        width: 100%;
+    }
+    .cottages h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    /*Footer*/
+    .footer {
+        padding: 10px;
+    }
+}
+
+/*Animation*/
+.ctn:hover {
+    background: whitesmoke;
+    color: maroon;
+    box-shadow: 2px 2px 5px rgb(37, 1, 1);
+}
+li:hover {
+    color: maroon;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+img {
+    transition: transform .3s ease;
+}
+img:hover {
+    transform: scale(1.1);
+}
